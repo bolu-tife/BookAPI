@@ -70,23 +70,12 @@ namespace BookAPI
                 //c.AddSecurityDefinition("Oauth2", new ApiKeyScheme
                 c.AddSecurityDefinition("Bearer", new ApiKeyScheme()
                 {
-                    Description = "JWT Authorization header {token}",
+                    Description = "Standard Authorization header using the Bearer scheme. Example:\"bearer {token}",
                     Name = "Authorization",
                     In = "header",
                     Type = "apiKey"
                 });
-                //c.AddSecurityDefinition("Bearer", new ApiKeyScheme
-                //{
-
-
-                //    Description = "Standard Authorization header using the Bearer scheme. Example:\"bearer {token}",
-                //    In  = "Headers",
-                //    Name = "Authorization",
-                //    Type = "apiKey",
-                   
-                //    //AuthenticationScheme =  "Bearer"
-
-                //});
+                
 
                 c.OperationFilter<SecurityRequirementsOperationFilter>();
             });
