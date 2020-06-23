@@ -30,4 +30,3 @@
 /Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.RazorTargetAssemblyInfo.cache
 /Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.dll
 /Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.pdb
-/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.csprojAssemblyReference.cache

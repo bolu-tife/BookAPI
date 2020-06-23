@@ -24,6 +24,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Swashbuckle.AspNetCore.Swagger;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authentication;
+using BookAPI.Entities;
+using Microsoft.AspNetCore.Identity;
 
 namespace BookAPI
 {
@@ -49,7 +51,8 @@ namespace BookAPI
 
             services.AddDbContext<BookApiDataContext>(options => options.UseSqlServer(connection));
 
-            services.AddSwaggerGen(c =>
+          
+           services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info
                 {
@@ -63,6 +66,13 @@ namespace BookAPI
                         Email = "cyberinters@slack.com",
                         Url = "cyberinterns.slack.com"
                     },
+
+                    License = new License
+                    {
+                        Name = "",
+                        Url = "#"
+                    }
+
                 });
 
 
@@ -75,9 +85,12 @@ namespace BookAPI
                     In = "header",
                     Type = "apiKey"
                 });
-                
 
-                c.OperationFilter<SecurityRequirementsOperationFilter>();
+                c.AddSecurityRequirement(new Dictionary<string, IEnumerable<string>> {
+                { "Bearer", Enumerable.Empty<string>() },
+                });
+
+                //c.OperationFilter<SecurityRequirementsOperationFilter>();
             });
 
             services.AddAuthentication(x =>
@@ -98,13 +111,23 @@ namespace BookAPI
                 };
             });
 
+
+
+            // identity configuration
+            services.AddIdentity<ApplicationUser, ApplicationRole>()
+                .AddUserManager<UserManager<ApplicationUser>>()
+                .AddRoleManager<RoleManager<ApplicationRole>>()
+                .AddSignInManager<SignInManager<ApplicationUser>>()
+                .AddEntityFrameworkStores<BookApiDataContext>();
+
             services.AddScoped<IAuthor, AuthorService>();
             services.AddScoped<IBook, BookService>();
             services.AddScoped<ICategory, CategoryService>();
             services.AddScoped<IGenre, GenreService>();
             services.AddScoped<IPublisher, PublisherService>();
             services.AddScoped<IUser, UserService>();
-
+            services.AddScoped<IAccount, AccountService>();
+            services.AddScoped<IRole, RoleService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -119,6 +142,14 @@ namespace BookAPI
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
+
+            app.UseAuthentication();
+            app.UseCors(x => x
+                           .AllowAnyOrigin()
+                           .AllowAnyMethod()
+                           .AllowAnyHeader()
+                           .AllowCredentials());
+
 
             app.UseSwagger();
             // Enable the Swagger UI middleware and the Swagger generator
