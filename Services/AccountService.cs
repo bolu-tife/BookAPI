@@ -157,17 +157,17 @@ namespace BookAPI.Services
             if (updateUser != null)
             {
                 updateUser.FirstName = user.FirstName;
+                updateUser.MiddleName = user.MiddleName;
+
                 updateUser.LastName = user.LastName;
                 updateUser.Email = user.FirstName;
 
-                await _userManager.UpdateAsync(user);
+                await _userManager.UpdateAsync(updateUser);
                 return true;
             }
 
             return false;
         }
-
-
 
     }
 }
