@@ -19,6 +19,7 @@ namespace BookAPI.Interface
         Task<bool> UpdateUser(ApplicationUser user);
 
         Task<bool> Delete(string id);
+        
     }
 }
 

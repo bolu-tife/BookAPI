@@ -25,6 +25,31 @@ namespace BookAPI.Controllers
             _account = account;
         }
 
+        //[HttpPost]
+        //public async Task<IActionResult> Post([FromBody] UserDto registerUser)
+        //{
+        //    ApplicationUser user = new ApplicationUser();
+
+        //    user.FirstName = registerUser.FirstName;
+        //    user.LastName = registerUser.LastName;
+        //    user.UserName = registerUser.Username;
+        //    user.Email = registerUser.Email;
+
+
+        //    var newUser = await _account.CreateUser(user, registerUser.Password);
+        //    if (newUser)
+        //    {
+        //        var mes = "User Created";
+        //        mes += $"Welcome {user.FullName}!";
+        //        if (_account.IsInRoleAsync(user, "NormalUser").Result)
+        //        {
+        //            mes += "\nYou are a NormalUser.";
+        //        }
+        //        return Ok(new { message = "User Created" });
+        //    }
+
+        //    return BadRequest(new { message = "User not created" });
+        //}
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] UserDto registerUser)
         {
@@ -39,6 +64,7 @@ namespace BookAPI.Controllers
             var newUser = await _account.CreateUser(user, registerUser.Password);
             if (newUser)
                 return Ok(new { message = "User Created" });
+            
 
             return BadRequest(new { message = "User not created" });
         }

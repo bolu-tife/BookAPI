@@ -159,8 +159,8 @@ namespace BookAPI
                 settings.GeneratorSettings.DefaultPropertyNameHandling = PropertyNameHandling.CamelCase;
 
             });
-           
 
+            //app.UseIdentity();
             app.UseHttpsRedirection();
             app.UseMvc();
         }

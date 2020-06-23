@@ -46,12 +46,30 @@ namespace BookAPI.Services
                 {
                     var userResult = await _userManager.CreateAsync(user, password);
                     if (userResult.Succeeded)
+                    {
+                        //if (!_roleManager.RoleExistsAsync("NormalUser").Result)
+                        //{
+                        //    ApplicationRole role = new ApplicationRole();
+                        //    role.Name = "NormalUser";
+                        //    role.Description = "Perform normal operations.";
+                        //    var roleResult = _roleManager.CreateAsync(role).Result;
+                        //    if (!roleResult.Succeeded)
+                        //    {
+                        //        return false;
+                        //    }
                         return true;
+                        //}
+
+                        //_userManager.AddToRoleAsync(user, "NormalUser").Wait();
+                        //return false;
+
+                    }
                 }
                 return false;
             }
             catch (Exception ex)
             {
+                
                 return false;
             }
         }
@@ -162,7 +180,7 @@ namespace BookAPI.Services
                 updateUser.LastName = user.LastName;
                 updateUser.Email = user.FirstName;
 
-                await _userManager.UpdateAsync(updateUser);
+                await _userManager.UpdateAsync(updateUser );
                 return true;
             }
 
