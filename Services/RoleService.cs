@@ -73,15 +73,16 @@ namespace BookAPI.Services
 
         }
 
+        
         public async Task<bool> UpdateUser(ApplicationRole role)
         {
             var updaterole = await _roleManager.FindByIdAsync(role.Id);
             if (updaterole != null)
             {
-                updaterole.RoleName = role.RoleName;
+                updaterole.Name = role.Name;
 
 
-                await _roleManager.UpdateAsync(role);
+                await _roleManager.UpdateAsync(updaterole);
                 return true;
             }
 

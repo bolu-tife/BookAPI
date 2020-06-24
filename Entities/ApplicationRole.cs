@@ -8,7 +8,7 @@ namespace BookAPI.Entities
         //public string Student { get; set; }
         //public string Admin { get; set; }
         //public string Lecturer { get; set; }
-        public string RoleName { get; set; }
-        public string Description { get; set; }
+        //public string RoleName { get; set; }
+        //public string Description { get; set; }
     }
 }
