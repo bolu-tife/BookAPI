@@ -1,0 +1,27 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookAPI", "BookAPI.csproj", "{06429C30-250D-47BE-8C72-EF1844547DFE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "New Folder", "New Folder", "{F514A5D6-6020-426B-A1C5-5401D67D575E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookWeb", "BookWeb\BookWeb.csproj", "{387A0081-D16E-4EDA-A2D7-5021F622FCDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06429C30-250D-47BE-8C72-EF1844547DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06429C30-250D-47BE-8C72-EF1844547DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06429C30-250D-47BE-8C72-EF1844547DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06429C30-250D-47BE-8C72-EF1844547DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{387A0081-D16E-4EDA-A2D7-5021F622FCDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{387A0081-D16E-4EDA-A2D7-5021F622FCDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{387A0081-D16E-4EDA-A2D7-5021F622FCDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{387A0081-D16E-4EDA-A2D7-5021F622FCDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,33 @@
+/Users/abdullahi/Projects/cyberinterns/BookAPI/bin/Debug/netcoreapp2.2/appsettings.Development.json
+/Users/abdullahi/Projects/cyberinterns/BookAPI/bin/Debug/netcoreapp2.2/appsettings.json
+/Users/abdullahi/Projects/cyberinterns/BookAPI/bin/Debug/netcoreapp2.2/Properties/launchSettings.json
+/Users/abdullahi/Projects/cyberinterns/BookAPI/bin/Debug/netcoreapp2.2/BookAPI.deps.json
+/Users/abdullahi/Projects/cyberinterns/BookAPI/bin/Debug/netcoreapp2.2/BookAPI.runtimeconfig.json
+/Users/abdullahi/Projects/cyberinterns/BookAPI/bin/Debug/netcoreapp2.2/BookAPI.runtimeconfig.dev.json
+/Users/abdullahi/Projects/cyberinterns/BookAPI/bin/Debug/netcoreapp2.2/BookAPI.dll
+/Users/abdullahi/Projects/cyberinterns/BookAPI/bin/Debug/netcoreapp2.2/BookAPI.pdb
+/Users/abdullahi/Projects/cyberinterns/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.AssemblyInfoInputs.cache
+/Users/abdullahi/Projects/cyberinterns/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.AssemblyInfo.cs
+/Users/abdullahi/Projects/cyberinterns/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.csproj.CoreCompileInputs.cache
+/Users/abdullahi/Projects/cyberinterns/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.RazorAssemblyInfo.cache
+/Users/abdullahi/Projects/cyberinterns/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.RazorAssemblyInfo.cs
+/Users/abdullahi/Projects/cyberinterns/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.RazorTargetAssemblyInfo.cache
+/Users/abdullahi/Projects/cyberinterns/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.dll
+/Users/abdullahi/Projects/cyberinterns/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.pdb
+/Users/abdullahi/Projects/cyberinterns/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.genruntimeconfig.cache
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/bin/Debug/netcoreapp2.2/appsettings.Development.json
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/bin/Debug/netcoreapp2.2/appsettings.json
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/bin/Debug/netcoreapp2.2/Properties/launchSettings.json
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/bin/Debug/netcoreapp2.2/BookAPI.deps.json
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/bin/Debug/netcoreapp2.2/BookAPI.runtimeconfig.json
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/bin/Debug/netcoreapp2.2/BookAPI.runtimeconfig.dev.json
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/bin/Debug/netcoreapp2.2/BookAPI.dll
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/bin/Debug/netcoreapp2.2/BookAPI.pdb
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.RazorAssemblyInfo.cache
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.RazorAssemblyInfo.cs
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.AssemblyInfoInputs.cache
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.AssemblyInfo.cs
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.RazorTargetAssemblyInfo.cache
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.dll
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.pdb
+/Users/boluwatifeomosowon/Downloads/cyberInterns 2/BookAPI/obj/Debug/netcoreapp2.2/BookAPI.csprojAssemblyReference.cache
